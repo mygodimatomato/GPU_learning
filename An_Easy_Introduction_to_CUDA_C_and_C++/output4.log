@@ -1,0 +1,139 @@
+
+Running profiling for ./saxpy_unified_init...
+Run 1 output: ==2315589== NVPROF is profiling process 2315589, command: ./saxpy_unified_init
+==2315589== Profiling application: ./saxpy_unified_init
+==2315589== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   98.21%  1.4613ms         1  1.4613ms  1.4613ms  1.4613ms  init(int, float*, float*)
+                    1.79%  26.688us         1  26.688us  26.688us  26.688us  saxpy(int, float, float*, float*)
+      API calls:   93.22%  284.27ms         2  142.14ms  68.607us  284.20ms  cudaMallocManaged
+                    5.76%  17.577ms         2  8.7886ms  12.486us  17.565ms  cudaLaunchKernel
+                    0.48%  1.4713ms         1  1.4713ms  1.4713ms  1.4713ms  cudaDeviceSynchronize
+                    0.33%  1.0025ms       456  2.1980us     198ns  116.51us  cuDeviceGetAttribute
+                    0.18%  547.18us         2  273.59us  217.16us  330.02us  cudaFree
+                    0.01%  33.818us         4  8.4540us  5.6740us  16.048us  cuDeviceGetName
+                    0.01%  23.324us         4  5.8310us  1.7320us  16.706us  cuDeviceGetPCIBusId
+                    0.00%  4.4180us         4  1.1040us     310ns  3.2560us  cuDeviceTotalMem
+                    0.00%  2.9440us         8     368ns     234ns  1.0440us  cuDeviceGet
+                    0.00%  2.9180us         3     972ns     282ns  1.9600us  cuDeviceGetCount
+                    0.00%  1.4300us         4     357ns     332ns     420ns  cuDeviceGetUuid
+                    0.00%     632ns         1     632ns     632ns     632ns  cuModuleGetLoadingMode
+
+==2315589== Unified Memory profiling result:
+Device "Tesla P100-PCIE-16GB (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+      24  170.67KB  4.0000KB  0.9961MB  4.000000MB  371.1000us  Device To Host
+      13         -         -         -           -  1.664660ms  Gpu page fault groups
+Total CPU Page faults: 12
+
+Run 1: Could not parse profiling time from output.
+Run 2 output: ==2315648== NVPROF is profiling process 2315648, command: ./saxpy_unified_init
+==2315648== Profiling application: ./saxpy_unified_init
+==2315648== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   98.21%  1.4451ms         1  1.4451ms  1.4451ms  1.4451ms  init(int, float*, float*)
+                    1.79%  26.368us         1  26.368us  26.368us  26.368us  saxpy(int, float, float*, float*)
+      API calls:   97.95%  244.04ms         2  122.02ms  63.265us  243.98ms  cudaMallocManaged
+                    0.96%  2.3941ms         2  1.1971ms  8.4610us  2.3857ms  cudaLaunchKernel
+                    0.59%  1.4618ms         1  1.4618ms  1.4618ms  1.4618ms  cudaDeviceSynchronize
+                    0.31%  767.88us       456  1.6830us     132ns  92.919us  cuDeviceGetAttribute
+                    0.17%  428.90us         2  214.45us  179.93us  248.96us  cudaFree
+                    0.01%  27.005us         4  6.7510us  4.4650us  12.764us  cuDeviceGetName
+                    0.01%  22.656us         4  5.6640us  1.2750us  17.473us  cuDeviceGetPCIBusId
+                    0.00%  2.0310us         8     253ns     154ns     635ns  cuDeviceGet
+                    0.00%  1.5130us         3     504ns     239ns  1.0020us  cuDeviceGetCount
+                    0.00%  1.3010us         4     325ns     224ns     480ns  cuDeviceTotalMem
+                    0.00%  1.1250us         4     281ns     231ns     406ns  cuDeviceGetUuid
+                    0.00%     397ns         1     397ns     397ns     397ns  cuModuleGetLoadingMode
+
+==2315648== Unified Memory profiling result:
+Device "Tesla P100-PCIE-16GB (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+      24  170.67KB  4.0000KB  0.9961MB  4.000000MB  359.2300us  Device To Host
+      14         -         -         -           -  1.543605ms  Gpu page fault groups
+Total CPU Page faults: 12
+
+Run 2: Could not parse profiling time from output.
+Run 3 output: ==2315686== NVPROF is profiling process 2315686, command: ./saxpy_unified_init
+==2315686== Profiling application: ./saxpy_unified_init
+==2315686== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   98.30%  1.5333ms         1  1.5333ms  1.5333ms  1.5333ms  init(int, float*, float*)
+                    1.70%  26.528us         1  26.528us  26.528us  26.528us  saxpy(int, float, float*, float*)
+      API calls:   97.85%  245.69ms         2  122.85ms  32.503us  245.66ms  cudaMallocManaged
+                    0.93%  2.3375ms         2  1.1687ms  8.2640us  2.3292ms  cudaLaunchKernel
+                    0.61%  1.5400ms         1  1.5400ms  1.5400ms  1.5400ms  cudaDeviceSynchronize
+                    0.40%  1.0039ms       456  2.2010us     200ns  118.06us  cuDeviceGetAttribute
+                    0.18%  440.70us         2  220.35us  186.99us  253.71us  cudaFree
+                    0.02%  40.368us         4  10.092us  5.8720us  21.214us  cuDeviceGetName
+                    0.01%  23.336us         4  5.8340us  1.6620us  16.708us  cuDeviceGetPCIBusId
+                    0.00%  4.7620us         8     595ns     230ns  1.3200us  cuDeviceGet
+                    0.00%  2.3740us         3     791ns     342ns  1.4360us  cuDeviceGetCount
+                    0.00%  2.2300us         4     557ns     336ns  1.0660us  cuDeviceTotalMem
+                    0.00%  1.5640us         4     391ns     336ns     524ns  cuDeviceGetUuid
+                    0.00%  1.0200us         1  1.0200us  1.0200us  1.0200us  cuModuleGetLoadingMode
+
+==2315686== Unified Memory profiling result:
+Device "Tesla P100-PCIE-16GB (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+      24  170.67KB  4.0000KB  0.9961MB  4.000000MB  366.4640us  Device To Host
+      14         -         -         -           -  1.924561ms  Gpu page fault groups
+Total CPU Page faults: 12
+
+Run 3: Could not parse profiling time from output.
+Run 4 output: ==2315763== NVPROF is profiling process 2315763, command: ./saxpy_unified_init
+==2315763== Profiling application: ./saxpy_unified_init
+==2315763== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   98.13%  1.3955ms         1  1.3955ms  1.3955ms  1.3955ms  init(int, float*, float*)
+                    1.87%  26.592us         1  26.592us  26.592us  26.592us  saxpy(int, float, float*, float*)
+      API calls:   98.20%  278.92ms         2  139.46ms  65.864us  278.85ms  cudaMallocManaged
+                    0.70%  1.9825ms         2  991.24us  11.709us  1.9708ms  cudaLaunchKernel
+                    0.50%  1.4061ms         1  1.4061ms  1.4061ms  1.4061ms  cudaDeviceSynchronize
+                    0.41%  1.1560ms       456  2.5350us     200ns  162.10us  cuDeviceGetAttribute
+                    0.18%  512.58us         2  256.29us  202.85us  309.74us  cudaFree
+                    0.01%  34.268us         4  8.5670us  5.7540us  15.736us  cuDeviceGetName
+                    0.01%  23.064us         4  5.7660us  1.7080us  16.330us  cuDeviceGetPCIBusId
+                    0.00%  2.8780us         8     359ns     226ns  1.0780us  cuDeviceGet
+                    0.00%  2.2780us         3     759ns     298ns  1.5740us  cuDeviceGetCount
+                    0.00%  1.7500us         4     437ns     292ns     724ns  cuDeviceTotalMem
+                    0.00%  1.4700us         4     367ns     326ns     412ns  cuDeviceGetUuid
+                    0.00%     414ns         1     414ns     414ns     414ns  cuModuleGetLoadingMode
+
+==2315763== Unified Memory profiling result:
+Device "Tesla P100-PCIE-16GB (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+      24  170.67KB  4.0000KB  0.9961MB  4.000000MB  394.0120us  Device To Host
+      13         -         -         -           -  1.866737ms  Gpu page fault groups
+Total CPU Page faults: 12
+
+Run 4: Could not parse profiling time from output.
+Run 5 output: ==2315812== NVPROF is profiling process 2315812, command: ./saxpy_unified_init
+==2315812== Profiling application: ./saxpy_unified_init
+==2315812== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   98.23%  1.4766ms         1  1.4766ms  1.4766ms  1.4766ms  init(int, float*, float*)
+                    1.77%  26.656us         1  26.656us  26.656us  26.656us  saxpy(int, float, float*, float*)
+      API calls:   97.87%  247.99ms         2  124.00ms  71.214us  247.92ms  cudaMallocManaged
+                    0.97%  2.4497ms         2  1.2248ms  8.3170us  2.4413ms  cudaLaunchKernel
+                    0.59%  1.4939ms         1  1.4939ms  1.4939ms  1.4939ms  cudaDeviceSynchronize
+                    0.38%  959.92us       456  2.1050us     200ns  113.00us  cuDeviceGetAttribute
+                    0.17%  428.73us         2  214.36us  179.25us  249.48us  cudaFree
+                    0.01%  34.214us         4  8.5530us  5.5380us  15.942us  cuDeviceGetName
+                    0.01%  25.287us         4  6.3210us  1.9080us  17.650us  cuDeviceGetPCIBusId
+                    0.00%  2.9280us         8     366ns     228ns  1.1780us  cuDeviceGet
+                    0.00%  2.9000us         3     966ns     354ns  1.9430us  cuDeviceGetCount
+                    0.00%  1.6620us         4     415ns     304ns     676ns  cuDeviceTotalMem
+                    0.00%  1.3160us         4     329ns     284ns     410ns  cuDeviceGetUuid
+                    0.00%     436ns         1     436ns     436ns     436ns  cuModuleGetLoadingMode
+
+==2315812== Unified Memory profiling result:
+Device "Tesla P100-PCIE-16GB (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+      24  170.67KB  4.0000KB  0.9961MB  4.000000MB  356.5720us  Device To Host
+      12         -         -         -           -  1.598421ms  Gpu page fault groups
+Total CPU Page faults: 12
+
+Run 5: Could not parse profiling time from output.
+
+Statistics for ./saxpy_unified:
