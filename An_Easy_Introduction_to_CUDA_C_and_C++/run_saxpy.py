@@ -38,26 +38,26 @@ def calculate_statistics(times):
     min_time = min(times)
     return avg_time, max_time, min_time
 
-# # Run profiling for saxpy
-# print("Running profiling for ./saxpy...")
-# saxpy_command = ["nvprof", "./saxpy"]
-# saxpy_times = run_profiling(saxpy_command, num_runs=5)
-# saxpy_avg, saxpy_max, saxpy_min = calculate_statistics(saxpy_times)
+# Run profiling for saxpy
+print("Running profiling for ./saxpy...")
+saxpy_command = ["nvprof", "./saxpy_init"]
+saxpy_times = run_profiling(saxpy_command, num_runs=5)
+saxpy_avg, saxpy_max, saxpy_min = calculate_statistics(saxpy_times)
 
-# # Display statistics for saxpy
-# print("\nStatistics for ./saxpy:")
-# print(f"Average Time: {saxpy_avg:.2f} ms")
-# print(f"Max Time: {saxpy_max:.2f} ms")
-# print(f"Min Time: {saxpy_min:.2f} ms")
+# Display statistics for saxpy
+print("\nStatistics for ./saxpy:")
+print(f"Average Time: {saxpy_avg:.2f} ms")
+print(f"Max Time: {saxpy_max:.2f} ms")
+print(f"Min Time: {saxpy_min:.2f} ms")
 
-# Run profiling for saxpy_unified_init
-print("\nRunning profiling for ./saxpy_unified_init...")
-saxpy_unified_command = ["nvprof", "./saxpy_unified_init"]
-saxpy_unified_times = run_profiling(saxpy_unified_command, num_runs=5)
-saxpy_unified_avg, saxpy_unified_max, saxpy_unified_min = calculate_statistics(saxpy_unified_times)
+# # Run profiling for saxpy_unified_init
+# print("\nRunning profiling for ./saxpy_unified_init...")
+# saxpy_unified_command = ["nvprof", "./saxpy_unified_init"]
+# saxpy_unified_times = run_profiling(saxpy_unified_command, num_runs=5)
+# saxpy_unified_avg, saxpy_unified_max, saxpy_unified_min = calculate_statistics(saxpy_unified_times)
 
-# Display statistics for saxpy_unified
-print("\nStatistics for ./saxpy_unified:")
-print(f"Average Time: {saxpy_unified_avg:.2f} ms")
-print(f"Max Time: {saxpy_unified_max:.2f} ms")
-print(f"Min Time: {saxpy_unified_min:.2f} ms")
+# # Display statistics for saxpy_unified
+# print("\nStatistics for ./saxpy_unified:")
+# print(f"Average Time: {saxpy_unified_avg:.2f} ms")
+# print(f"Max Time: {saxpy_unified_max:.2f} ms")
+# print(f"Min Time: {saxpy_unified_min:.2f} ms")

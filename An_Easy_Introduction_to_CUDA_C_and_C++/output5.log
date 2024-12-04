@@ -1,0 +1,113 @@
+Running profiling for ./saxpy...
+Run 1 output: ==2341238== NVPROF is profiling process 2341238, command: ./saxpy_init
+==2341238== Profiling application: ./saxpy_init
+==2341238== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   51.78%  2.0340ms         2  1.0170ms  1.0108ms  1.0232ms  [CUDA memcpy HtoD]
+                   47.12%  1.8510ms         1  1.8510ms  1.8510ms  1.8510ms  [CUDA memcpy DtoH]
+                    0.67%  26.336us         1  26.336us  26.336us  26.336us  saxpy(int, float, float*, float*)
+                    0.44%  17.184us         1  17.184us  17.184us  17.184us  init(int, float*, float*)
+      API calls:   95.89%  233.55ms         2  116.78ms  123.88us  233.43ms  cudaMalloc
+                    2.49%  6.0708ms         3  2.0236ms  1.2794ms  3.4809ms  cudaMemcpy
+                    1.05%  2.5574ms         2  1.2787ms  8.8050us  2.5486ms  cudaLaunchKernel
+                    0.39%  948.56us       456  2.0800us     200ns  108.53us  cuDeviceGetAttribute
+                    0.15%  370.17us         2  185.09us  161.34us  208.83us  cudaFree
+                    0.01%  35.822us         4  8.9550us  5.6500us  17.696us  cuDeviceGetName
+                    0.01%  24.940us         4  6.2350us  1.9120us  16.642us  cuDeviceGetPCIBusId
+                    0.00%  2.6500us         8     331ns     238ns     878ns  cuDeviceGet
+                    0.00%  1.9560us         3     652ns     320ns  1.2840us  cuDeviceGetCount
+                    0.00%  1.7140us         4     428ns     278ns     698ns  cuDeviceTotalMem
+                    0.00%  1.3580us         4     339ns     290ns     440ns  cuDeviceGetUuid
+                    0.00%     548ns         1     548ns     548ns     548ns  cuModuleGetLoadingMode
+
+Run 1: Could not parse profiling time from output.
+Run 2 output: ==2341286== NVPROF is profiling process 2341286, command: ./saxpy_init
+==2341286== Profiling application: ./saxpy_init
+==2341286== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   51.85%  2.0183ms         2  1.0092ms  1.0025ms  1.0158ms  [CUDA memcpy HtoD]
+                   47.03%  1.8307ms         1  1.8307ms  1.8307ms  1.8307ms  [CUDA memcpy DtoH]
+                    0.67%  26.208us         1  26.208us  26.208us  26.208us  saxpy(int, float, float*, float*)
+                    0.44%  17.184us         1  17.184us  17.184us  17.184us  init(int, float*, float*)
+      API calls:   96.07%  224.84ms         2  112.42ms  113.95us  224.72ms  cudaMalloc
+                    2.56%  5.9888ms         3  1.9963ms  1.2625ms  3.4006ms  cudaMemcpy
+                    0.77%  1.8001ms         2  900.05us  18.770us  1.7813ms  cudaLaunchKernel
+                    0.41%  964.02us       456  2.1140us     202ns  112.68us  cuDeviceGetAttribute
+                    0.16%  372.55us         2  186.28us  162.20us  210.36us  cudaFree
+                    0.02%  35.700us         4  8.9250us  5.6820us  17.670us  cuDeviceGetName
+                    0.01%  25.009us         4  6.2520us  1.8100us  17.070us  cuDeviceGetPCIBusId
+                    0.00%  5.5460us         8     693ns     278ns  1.4760us  cuDeviceGet
+                    0.00%  3.0190us         3  1.0060us     416ns  2.0330us  cuDeviceGetCount
+                    0.00%  1.8360us         4     459ns     356ns     628ns  cuDeviceTotalMem
+                    0.00%  1.3420us         4     335ns     296ns     400ns  cuDeviceGetUuid
+                    0.00%  1.0300us         1  1.0300us  1.0300us  1.0300us  cuModuleGetLoadingMode
+
+Run 2: Could not parse profiling time from output.
+Run 3 output: ==2341324== NVPROF is profiling process 2341324, command: ./saxpy_init
+==2341324== Profiling application: ./saxpy_init
+==2341324== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   53.45%  2.8879ms         2  1.4440ms  1.4414ms  1.4465ms  [CUDA memcpy HtoD]
+                   45.72%  2.4702ms         1  2.4702ms  2.4702ms  2.4702ms  [CUDA memcpy DtoH]
+                    0.49%  26.432us         1  26.432us  26.432us  26.432us  saxpy(int, float, float*, float*)
+                    0.34%  18.496us         1  18.496us  18.496us  18.496us  init(int, float*, float*)
+      API calls:   95.45%  268.07ms         2  134.03ms  155.06us  267.91ms  cudaMalloc
+                    2.97%  8.3454ms         3  2.7818ms  1.8519ms  4.6081ms  cudaMemcpy
+                    1.05%  2.9418ms         2  1.4709ms  17.478us  2.9243ms  cudaLaunchKernel
+                    0.35%  970.77us       456  2.1280us     202ns  115.04us  cuDeviceGetAttribute
+                    0.16%  449.68us         2  224.84us  211.35us  238.33us  cudaFree
+                    0.01%  33.442us         4  8.3600us  5.8280us  14.784us  cuDeviceGetName
+                    0.01%  25.951us         4  6.4870us  1.8920us  17.750us  cuDeviceGetPCIBusId
+                    0.00%  2.8220us         8     352ns     236ns     994ns  cuDeviceGet
+                    0.00%  2.0420us         3     680ns     302ns  1.3940us  cuDeviceGetCount
+                    0.00%  1.8400us         4     460ns     312ns     800ns  cuDeviceTotalMem
+                    0.00%  1.1920us         4     298ns     258ns     364ns  cuDeviceGetUuid
+                    0.00%     548ns         1     548ns     548ns     548ns  cuModuleGetLoadingMode
+
+Run 3: Could not parse profiling time from output.
+Run 4 output: ==2341362== NVPROF is profiling process 2341362, command: ./saxpy_init
+==2341362== Profiling application: ./saxpy_init
+==2341362== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   51.55%  2.0032ms         2  1.0016ms  999.45us  1.0038ms  [CUDA memcpy HtoD]
+                   47.33%  1.8393ms         1  1.8393ms  1.8393ms  1.8393ms  [CUDA memcpy DtoH]
+                    0.67%  26.080us         1  26.080us  26.080us  26.080us  saxpy(int, float, float*, float*)
+                    0.45%  17.408us         1  17.408us  17.408us  17.408us  init(int, float*, float*)
+      API calls:   96.19%  234.73ms         2  117.36ms  119.44us  234.61ms  cudaMalloc
+                    2.49%  6.0713ms         3  2.0238ms  1.2570ms  3.5074ms  cudaMemcpy
+                    0.74%  1.8177ms         2  908.85us  8.4520us  1.8092ms  cudaLaunchKernel
+                    0.40%  970.08us       456  2.1270us     198ns  112.52us  cuDeviceGetAttribute
+                    0.15%  372.07us         2  186.04us  160.91us  211.17us  cudaFree
+                    0.01%  33.417us         4  8.3540us  5.6660us  15.278us  cuDeviceGetName
+                    0.01%  24.753us         4  6.1880us  1.8020us  16.608us  cuDeviceGetPCIBusId
+                    0.00%  4.4100us         4  1.1020us     302ns  3.3600us  cuDeviceTotalMem
+                    0.00%  2.9300us         8     366ns     224ns  1.0140us  cuDeviceGet
+                    0.00%  2.1060us         3     702ns     310ns  1.4380us  cuDeviceGetCount
+                    0.00%  1.2720us         4     318ns     282ns     362ns  cuDeviceGetUuid
+                    0.00%     536ns         1     536ns     536ns     536ns  cuModuleGetLoadingMode
+
+Run 4: Could not parse profiling time from output.
+Run 5 output: ==2341422== NVPROF is profiling process 2341422, command: ./saxpy_init
+==2341422== Profiling application: ./saxpy_init
+==2341422== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   53.38%  2.8605ms         2  1.4302ms  1.4256ms  1.4349ms  [CUDA memcpy HtoD]
+                   45.81%  2.4548ms         1  2.4548ms  2.4548ms  2.4548ms  [CUDA memcpy DtoH]
+                    0.49%  26.111us         1  26.111us  26.111us  26.111us  saxpy(int, float, float*, float*)
+                    0.33%  17.440us         1  17.440us  17.440us  17.440us  init(int, float*, float*)
+      API calls:   95.39%  257.43ms         2  128.72ms  165.79us  257.26ms  cudaMalloc
+                    3.08%  8.3070ms         3  2.7690ms  1.8450ms  4.5792ms  cudaMemcpy
+                    0.99%  2.6745ms         2  1.3372ms  17.760us  2.6567ms  cudaLaunchKernel
+                    0.36%  969.25us       456  2.1250us     200ns  113.12us  cuDeviceGetAttribute
+                    0.16%  435.86us         2  217.93us  207.61us  228.25us  cudaFree
+                    0.01%  33.416us         4  8.3540us  5.9300us  14.508us  cuDeviceGetName
+                    0.01%  24.551us         4  6.1370us  1.8460us  16.422us  cuDeviceGetPCIBusId
+                    0.00%  3.0160us         8     377ns     210ns  1.1200us  cuDeviceGet
+                    0.00%  2.0460us         3     682ns     326ns  1.3540us  cuDeviceGetCount
+                    0.00%  1.7340us         4     433ns     294ns     772ns  cuDeviceTotalMem
+                    0.00%  1.4140us         4     353ns     320ns     438ns  cuDeviceGetUuid
+                    0.00%     402ns         1     402ns     402ns     402ns  cuModuleGetLoadingMode
+
+Run 5: Could not parse profiling time from output.
+
+Statistics for ./saxpy:
