@@ -14,8 +14,8 @@ __global__ void device_copy_scalar_kernel(int* d_in, int* d_out, int N) {
 
 void device_copy_scalar(int* d_in, int* d_out, int N) {
     int threads = 128;
-    // int blocks = min((N + threads - 1) / threads, MAX_BLOCKS);
-    int blocks = (N + threads - 1) / threads;
+    int blocks = min((N + threads - 1) / threads, MAX_BLOCKS);
+    // int blocks = (N + threads - 1) / threads;
 
     // Measure kernel execution time
     cudaEvent_t start, stop;
