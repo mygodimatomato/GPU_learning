@@ -1,0 +1,60 @@
+- [Introducing Low-Level GPU Virtual Memory Management](https://developer.nvidia.com/blog/introducing-low-level-gpu-virtual-memory-management/)
+- [CUDA Pro Tip: Write Flexible Kernels with Grid-Stride Loops](https://developer.nvidia.com/blog/cuda-pro-tip-write-flexible-kernels-grid-stride-loops/) #Done 
+- [CUDA Pro Tip: Increase Performance with Vectorized Memory Access](https://developer.nvidia.com/blog/cuda-pro-tip-increase-performance-with-vectorized-memory-access/)
+- [CUDA Dynamic Parallelism API and Principles](https://developer.nvidia.com/blog/cuda-dynamic-parallelism-api-principles/)
+- [Flexible CUDA Thread Programming](https://developer.nvidia.com/blog/flexible-cuda-thread-programming/)
+- [Cooperative Groups: Flexible CUDA Thread Programming](https://developer.nvidia.com/blog/cooperative-groups/)
+- [Enhancing Memory Allocation with New NVIDIA CUDA 11.2 Features](https://developer.nvidia.com/blog/enhancing-memory-allocation-with-new-cuda-11-2-features/)
+- [Improving GPU Memory Oversubscription Performance](https://developer.nvidia.com/blog/improving-gpu-memory-oversubscription-performance/)
+- [Maximizing Unified Memory Performance in CUDA](https://developer.nvidia.com/blog/maximizing-unified-memory-performance-cuda/)
+- [Unified Memory in CUDA 6](https://developer.nvidia.com/blog/unified-memory-in-cuda-6/)
+- [Unified Memory for CUDA Beginners](https://developer.nvidia.com/blog/unified-memory-cuda-beginners/) #Done
+- [Simplifying GPU Programming for HPC with NVIDIA Grace Hopper Superchip](https://developer.nvidia.com/blog/simplifying-gpu-programming-for-hpc-with-the-nvidia-grace-hopper-superchip/)
+- [Unlock the Power of NVIDIA Grace and NVIDIA Hopper Architectures with Foundational HPC Software](https://developer.nvidia.com/blog/unlock-the-power-of-nvidia-grace-and-nvidia-hopper-architectures-with-foundational-hpc-software/)
+- [How to Access Global Memory Efficiently in CUDA C/C++ Kernels](https://developer.nvidia.com/blog/how-access-global-memory-efficiently-cuda-c-kernels/)
+- [Using Shared Memory in CUDA C/C++](https://developer.nvidia.com/blog/using-shared-memory-cuda-cc/)
+- [An Efficient Matrix Transpose in CUDA C/C++](https://developer.nvidia.com/blog/efficient-matrix-transpose-cuda-cc/)
+- [CUDA 8 Features Revealed](https://developer.nvidia.com/blog/cuda-8-features-revealed/)
+- [How to Overlap Data Transfers in CUDA C/C++](https://developer.nvidia.com/blog/how-overlap-data-transfers-cuda-cc/) #Done 
+- [How to Optimize Data Transfers in CUDA C/C++](https://developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc/) #Done 
+- [How to Implement Performance Metrics in CUDA C/C++](https://developer.nvidia.com/blog/how-implement-performance-metrics-cuda-cc/) #Done 
+- [Simplifying GPU Application Development with Heterogeneous Memory Management](https://developer.nvidia.com/blog/simplifying-gpu-application-development-with-heterogeneous-memory-management/)
+- [Simplifying GPU Programming for HPC with NVIDIA Grace Hopper Superchip](https://developer.nvidia.com/blog/simplifying-gpu-programming-for-hpc-with-the-nvidia-grace-hopper-superchip/)
+- [Using the NVIDIA CUDA Stream-Ordered Memory Allocator, Part 1](https://developer.nvidia.com/blog/using-cuda-stream-ordered-memory-allocator-part-1/)
+- [Using the NVIDIA CUDA Stream-Ordered Memory Allocator, Part 2](https://developer.nvidia.com/blog/using-cuda-stream-ordered-memory-allocator-part-2/)
+- [Improving Network Performance of HPC Systems Using NVIDIA Magnum IO NVSHMEM and GPUDirect Async](https://developer.nvidia.com/blog/improving-network-performance-of-hpc-systems-using-nvidia-magnum-io-nvshmem-and-gpudirect-async/)
+- [Enhancing Application Portability and Compatibility across New Platforms Using NVIDIA Magnum IO NVSHMEM 3.0](https://developer.nvidia.com/blog/enhancing-application-portability-and-compatibility-across-new-platforms-using-nvidia-magnum-io-nvshmem-3-0/)
+- [A Design Pattern Language for Engineering (Parallel) Software](https://www.cecm.sfu.ca/CAG/papers/KeutzerMattson.pdf)
+- [NVIDIA Grace CPU Delivers World-Class Data Center Performance and Breakthrough Energy Efficiency](https://developer.nvidia.com/blog/nvidia-grace-cpu-delivers-world-class-data-center-performance-and-breakthrough-energy-efficiency/)
+- [Supercharging Deduplication in pandas Using RAPIDS cuDF](https://developer.nvidia.com/blog/supercharging-deduplication-in-pandas-using-rapids-cudf/)
+- [Advancing Ansys Workloads with NVIDIA Grace and NVIDIA Grace Hopper](https://developer.nvidia.com/blog/advancing-ansys-workloads-with-nvidia-grace-and-nvidia-grace-hopper/
+- [探討CUDA的4種記憶體存取方式](https://kaibaoom.tw/2020/07/21/cuda-four-memory-access/)
+- [Building High-Performance Applications in the Era of Accelerated Computing](https://developer.nvidia.com/blog/building-high-performance-applications-in-the-era-of-accelerated-computing/)
+- [Fueling High-Performance Computing with Full-Stack Innovation](https://developer.nvidia.com/blog/fueling-high-performance-computing-with-full-stack-innovation/)
+- [Announcing the NVIDIA HPC SDK](https://developer.nvidia.com/blog/hpc-sdk/)
+- [Inside Pascal: NVIDIA’s Newest Computing Platform](https://developer.nvidia.com/blog/inside-pascal/)
+- [Mark Harris](https://developer.nvidia.com/blog/author/mharris/)
+- [GPU Pro Tip: CUDA 7 Streams Simplify Concurrency](https://developer.nvidia.com/blog/gpu-pro-tip-cuda-7-streams-simplify-concurrency/) #Done 
+- [Finite Difference Methods in CUDA C/C++, Part 1](https://developer.nvidia.com/blog/finite-difference-methods-cuda-cc-part-1/)
+- [Finite Difference Methods in CUDA C++, Part 2](https://developer.nvidia.com/blog/finite-difference-methods-cuda-c-part-2/)
+- [Accelerated Ray Tracing in One Weekend in CUDA](https://developer.nvidia.com/blog/accelerated-ray-tracing-cuda/)
+- [Best Practices for Multi-GPU Data Analysis Using RAPIDS with Dask](https://developer.nvidia.com/blog/best-practices-for-multi-gpu-data-analysis-using-rapids-with-dask/)
+- [Dynamic Control Flow in CUDA Graphs with Conditional Nodes](https://developer.nvidia.com/blog/dynamic-control-flow-in-cuda-graphs-with-conditional-nodes/)
+- [Unlocking GPU-Accelerated RDMA with NVIDIA DOCA GPUNetIO](https://developer.nvidia.com/blog/unlocking-gpu-accelerated-rdma-with-nvidia-doca-gpunetio/)
+- [Next Generation of FlashAttention](https://developer.nvidia.com/blog/next-generation-of-flashattention/)
+- [Nikolay Sakharnykh](https://developer.nvidia.com/blog/author/nsakharnykh/)
+- [Efficient CUDA Debugging: Memory Initialization and Thread Synchronization with NVIDIA Compute Sanitizer](https://developer.nvidia.com/blog/efficient-cuda-debugging-memory-initialization-and-thread-synchronization-with-nvidia-compute-sanitizer/)
+- [NVIDIA H100 System for HPC and Generative AI Sets Record for Financial Risk Calculations](https://developer.nvidia.com/blog/nvidia-h100-system-sets-records-for-hpc-and-generative-ai-financial-risk-calculations/)
+- [Fast, Flexible Allocation for NVIDIA CUDA with RAPIDS Memory Manager](https://developer.nvidia.com/blog/fast-flexible-allocation-for-cuda-with-rapids-memory-manager/)
+- [CUDACasts Episode 18: CUDA 6.0 Unified Memory](https://developer.nvidia.com/blog/cudacasts-episode-18-cuda-6-0-unified-memory/)
+- [Create a Custom Slackbot LLM Agent with NVIDIA NIM and LangChain](https://developer.nvidia.com/blog/create-a-custom-slackbot-llm-agent-with-nvidia-nim-and-langchain/)
+- [NVIDIA Blackwell Doubles LLM Training Performance in MLPerf Training v4.1](https://developer.nvidia.com/blog/nvidia-blackwell-doubles-llm-training-performance-in-mlperf-training-v4-1/)
+- [Beyond GPU Memory Limits with Unified Memory on Pascal](https://developer.nvidia.com/blog/beyond-gpu-memory-limits-unified-memory-pascal/)
+- [How to Query Device Properties and Handle Errors in CUDA C/C++](https://developer.nvidia.com/blog/how-query-device-properties-and-handle-errors-cuda-cc/) #Done 
+- [Achieved Occupancy](https://docs.nvidia.com/gameworks/content/developertools/desktop/analysis/report/cudaexperiments/kernellevel/achievedoccupancy.htm)
+- [Compute Sanitizer](https://docs.nvidia.com/compute-sanitizer/ComputeSanitizer/index.html)
+- [CUDA Pro Tip: The Fast Way to Query Device Properties](https://developer.nvidia.com/blog/cuda-pro-tip-the-fast-way-to-query-device-properties/) #Done 
+- [Efficient CUDA Debugging: Using NVIDIA Compute Sanitizer with NVIDIA Tools Extension and Creating Custom Tools](https://developer.nvidia.com/blog/efficient-cuda-debugging-using-compute-sanitizer-with-nvtx-and-creating-custom-tools/)
+
+## NVIDIA Developer Blog
+https://github.com/NVIDIA-developer-blog
